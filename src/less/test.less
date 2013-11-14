@@ -1,0 +1,33 @@
+@redColor: #990000;
+@grayColor: #ddd;
+.rounded-corners (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	-ms-border-radius: @radius;
+	-o-border-radius: @radius;
+	border-radius: @radius;
+}
+.rounded-oblong-corners (@radius: 5px) {
+	-webkit-border-radius: @radius*2 @radius @radius*2 @radius;
+	-moz-border-radius: @radius*2 @radius @radius*2 @radius;
+	-ms-border-radius: @radius*2 @radius @radius*2 @radius;
+	-o-border-radius: @radius*2 @radius @radius*2 @radius;
+	border-radius: @radius*2 @radius @radius*2 @radius;
+}
+
+/* Style Sheet */
+h1 {
+	color: @redColor/2;
+	.rounded-corners;
+}
+
+h2 {
+	border: 1px @redColor solid;
+	.rounded-corners(1em*2);
+}
+
+.article {
+	background-color: @grayColor;
+	border: 1px @redColor solid;
+	.rounded-oblong-corners(1em*2);
+}
