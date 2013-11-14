@@ -130,22 +130,22 @@ module.exports = function(grunt) {
 	// Default task.
 	grunt.registerTask('default', function() {
 		grunt.log.writeln('\nPlease Specify a Function\neg: grunt watch\n');
-		grunt.log.writeln('[watch]');
+		grunt.log.subhead('[watch]');
 		grunt.log.writeln('Sets the Watch Event to start watching LESS, CSS, and JS');
 		grunt.log.writeln('files in the SRC Folder\n');
-		grunt.log.writeln('[checkJS]');
+		grunt.log.subhead('[checkJS]');
 		grunt.log.writeln('Runs jsHint on all JS files in the SRC Folder\n');
-		grunt.log.writeln('[buildJS]');
+		grunt.log.subhead('[buildJS]');
 		grunt.log.writeln('Lints and Minifies all JS files in the SRC folder.');
 		grunt.log.writeln('Moves them to the INCLUDES Folder\n');
-		grunt.log.writeln('[checkCSS]');
+		grunt.log.subhead('[checkCSS]');
 		grunt.log.writeln('Runs Lint on all CSS files in the SRC Folder\n');
-		grunt.log.writeln('[buildCSS]');
+		grunt.log.subhead('[buildCSS]');
 		grunt.log.writeln('Lints and Minifies all CSS files in the SRC folder.');
 		grunt.log.writeln('Moves them to the INCLUDES Folder\n');
-		grunt.log.writeln('[compileLess]');
+		grunt.log.subhead('[compileLess]');
 		grunt.log.writeln('Compiles, Lints all LESS files in the SRC\n');
-		grunt.log.writeln('[buildLess]');
+		grunt.log.subhead('[buildLess]');
 		grunt.log.writeln('Compiles, Lints and Minifies all LESS files in the SRC');
 		grunt.log.writeln('folder.  Moves the Resulting CSS Files to the INCLUDES Folder\n');
 	});
